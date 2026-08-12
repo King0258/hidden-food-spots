@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hidden Food Spots - ร้านลับ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1>🍽️ Hidden Food Spots</h1>
+      <p>ค้นหาร้านอาหารลับที่แตกต่างของคุณ</p>
+    </header>
+
+    <div class="search-section">
+      <input 
+        type="text" 
+        id="searchInput" 
+        class="search-input" 
+        placeholder="ค้นหาร้าน... (ชื่อ, ประเภท, สถานที่)"
+      >
+      <select id="filterType" class="filter-select">
+        <option value="">ทั้งหมด</option>
+        <option value="ร้านอาหาร">ร้านอาหาร</option>
+        <option value="กาแฟ">กาแฟ</option>
+        <option value="ของหวาน">ของหวาน</option>
+        <option value="อื่นๆ">อื่นๆ</option>
+      </select>
+    </div>
+
+    <div class="restaurants-grid" id="restaurantsContainer">
+      <!-- Restaurants will be loaded here -->
+    </div>
+
+    <div id="noResults" class="no-results" style="display: none;">
+      ไม่พบร้านที่ตรงกับการค้นหา
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
